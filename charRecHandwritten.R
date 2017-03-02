@@ -14,3 +14,6 @@ cat(text)
 # Load second image with hi quality of image
 text <- ocr("data/imagemExemplo2.png")
 cat(text)
+
+text <- ocr("data/imagemExemplo3.png")
+cat(text)

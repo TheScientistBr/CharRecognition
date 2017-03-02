@@ -33,7 +33,7 @@ library("tesseract")
 
 **The First Image**
 
-![Figura-1 - Image with low resolution Text](data/imagemExemplo.png)
+![Figure-1 - Image with low resolution Text](data/imagemExemplo.png)
 <BR><BR>
 ***Load imagem one and extract characters by OCR with low quality of image***
 
@@ -47,7 +47,7 @@ Take a look at the results. Some words are wrong because the resulution is low.
 <BR>
 **The Second Image**
 
-![Figura-2 - Image with low resolution Text](data/imagemExemplo2.png)
+![Figure-2 - Image with low resolution Text](data/imagemExemplo2.png)
 <BR><BR>
 ***Load imagem one and extract characters by OCR with low quality of image***
 
@@ -55,6 +55,19 @@ Take a look at the results. Some words are wrong because the resulution is low.
 text <- ocr("data/imagemExemplo2.png")
 cat(text)
 ```
+
+<br>
+Now, you can load a hand write image. I draw this on Paitbrush with my finger over a touch screen.
+
+***Load hand write image***
+
+![Figure-3 - Image with hand write text](data/imagemExemplo3.png)
+
+```{r, message=F, warning=F}
+text <- ocr("data/imagemExemplo3.png")
+cat(text)
+```
+
 
 <BR>
 [The Scientist](http://www.thescientist.com.br)
